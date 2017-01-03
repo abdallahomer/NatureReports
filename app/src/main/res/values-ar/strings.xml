@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Nature Report</string>
+    <string name="app_name">تقرير الطبيعة</string>
     <string name="near_the">Near the</string>
     <string name="no_earthquakes">No earthquakes found.</string>
     <string name="no_internet_connection">No internet connection.</string>
@@ -16,4 +16,5 @@
     <string name="settings_order_by_label">Order By</string>
     <string name="settings_order_by_key" translatable="false">order_by</string>
     <string name="settings_order_by_default" translatable="false">@string/orderby_magnitude_value</string>
+
 </resources>
