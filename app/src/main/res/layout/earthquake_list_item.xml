@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/magnitude"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:background="@drawable/magnitude_circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textSize="16sp"
+        tools:text="5.6"/>
+
+    <LinearLayout
+        android:id="@+id/location_cont"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location_offset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="@color/textColorEarthquakeDetails"
+            tools:text="74km NW of"/>
+
+        <TextView
+            android:id="@+id/primary_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textColor="@color/textColorEarthquakeLocation"
+            tools:text="Rumoi,Japan"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="@color/textColorEarthquakeDetails"
+            tools:text="jan 22, 1998"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="@color/textColorEarthquakeDetails"
+            tools:text="9:35 Pm"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
